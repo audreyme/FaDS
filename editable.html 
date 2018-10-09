@@ -1,5 +1,45 @@
 <html>
   <body>
-
+<fieldset>
+    <legend>New User Signup:</legend>
+    <div>
+      <strong>Name:</strong>
+      <input type="text" name="name" size="16"></input>
+    </div>
+    <div>
+      <strong>Gender:</strong>
+      <label><input type="radio" name="gender" value="M"/>Male</label>
+      <label><input type="radio" name="gender" value="F" checked/>Female</label>
+    </div>
+    <div>
+      <strong>Age:</strong>
+      <input type="text" name="age" size="6" maxlength="2"></input>
+    </div>
+    <div>
+      <strong>Personality type:</strong>
+      <input type="text" name="ptype" size="6" maxlength="4"></input>
+      (<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">
+        Don't know your type?</a>)
+    </div>
+    <div>
+      <strong>Favorite OS:</strong>
+      <select name="os">
+        <option selected>Windows</option>
+        <option>Mac OS X</option>
+        <option>Linux</option>
+      </select>
+    </div>
+    <div>
+      <strong>Seeking age:</strong>
+      <input type="text" name="min" size="6"
+        maxlength="2" placeholder="min"></input>
+      to
+      <input type="text" name="max" size="6"
+        maxlength="2" placeholder="max"></input>
+    </div>
+    <div>
+      <input type="submit" value="Sign Up"/>
+    </div>
+  </fieldset>
   </body>
 </html>
